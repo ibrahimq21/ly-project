@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Flot Charts</title>
+  <title>AdminLTE 2 | Data Tables</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -365,19 +367,19 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
             <span>Charts</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="chartjs.jsp"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li class="active"><a href="flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="../charts/chartjs.jsp"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -385,8 +387,8 @@
             <i class="fa fa-laptop"></i>
             <span>UI Elements</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="../UI/general.jsp"><i class="fa fa-circle-o"></i> General</a></li>
@@ -401,8 +403,8 @@
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="../forms/general.jsp"><i class="fa fa-circle-o"></i> General Elements</a></li>
@@ -410,16 +412,16 @@
             <li><a href="../forms/editors.jsp"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../tables/simple.jsp"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.jsp"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="simple.jsp"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li class="active"><a href="data.jsp"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -445,8 +447,8 @@
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
@@ -464,8 +466,8 @@
           <a href="#">
             <i class="fa fa-share"></i> <span>Multilevel</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
@@ -508,13 +510,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Flot Charts
-        <small>preview sample</small>
+        Data Tables
+        <small>advanced tables</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Charts</a></li>
-        <li class="active">Flot</li>
+        <li><a href="#">Tables</a></li>
+        <li class="active">Data tables</li>
       </ol>
     </section>
 
@@ -522,116 +524,883 @@
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
-          <!-- interactive chart -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
-
-              <h3 class="box-title">Interactive Area Chart</h3>
-
-              <div class="box-tools pull-right">
-                Real time
-                <div class="btn-group" id="realtime" data-toggle="btn-toggle">
-                  <button type="button" class="btn btn-default btn-xs active" data-toggle="on">On</button>
-                  <button type="button" class="btn btn-default btn-xs" data-toggle="off">Off</button>
-                </div>
-              </div>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Hover Data Table</h3>
             </div>
+            <!-- /.box-header -->
             <div class="box-body">
-              <div id="interactive" style="height: 300px;"></div>
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  <th>CSS grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 4.0
+                  </td>
+                  <td>Win 95+</td>
+                  <td> 4</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.0
+                  </td>
+                  <td>Win 95+</td>
+                  <td>5</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.5
+                  </td>
+                  <td>Win 95+</td>
+                  <td>5.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 6
+                  </td>
+                  <td>Win 98+</td>
+                  <td>6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet Explorer 7</td>
+                  <td>Win XP SP2+</td>
+                  <td>7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>AOL browser (AOL desktop)</td>
+                  <td>Win XP</td>
+                  <td>6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 1.0</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 1.5</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 2.0</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 3.0</td>
+                  <td>Win 2k+ / OSX.3+</td>
+                  <td>1.9</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Camino 1.0</td>
+                  <td>OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Camino 1.5</td>
+                  <td>OSX.3+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape 7.2</td>
+                  <td>Win 95+ / Mac OS 8.6-9.2</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape Browser 8</td>
+                  <td>Win 98SE+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape Navigator 9</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.0</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.1</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.2</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.2</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.3</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.4</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.4</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.5</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.6</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.7</td>
+                  <td>Win 98+ / OSX.1+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.8</td>
+                  <td>Win 98+ / OSX.1+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Seamonkey 1.1</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Epiphany 2.20</td>
+                  <td>Gnome</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 1.2</td>
+                  <td>OSX.3</td>
+                  <td>125.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 1.3</td>
+                  <td>OSX.3</td>
+                  <td>312.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 2.0</td>
+                  <td>OSX.4+</td>
+                  <td>419.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 3.0</td>
+                  <td>OSX.4+</td>
+                  <td>522.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>OmniWeb 5.5</td>
+                  <td>OSX.4+</td>
+                  <td>420</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>iPod Touch / iPhone</td>
+                  <td>iPod</td>
+                  <td>420.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>S60</td>
+                  <td>S60</td>
+                  <td>413</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 7.0</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 7.5</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 8.0</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 8.5</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.0</td>
+                  <td>Win 95+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.2</td>
+                  <td>Win 88+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.5</td>
+                  <td>Win 88+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera for Wii</td>
+                  <td>Wii</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Nokia N800</td>
+                  <td>N800</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Nintendo DS browser</td>
+                  <td>Nintendo DS</td>
+                  <td>8.5</td>
+                  <td>C/A<sup>1</sup></td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.1</td>
+                  <td>KDE 3.1</td>
+                  <td>3.1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.3</td>
+                  <td>KDE 3.3</td>
+                  <td>3.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.5</td>
+                  <td>KDE 3.5</td>
+                  <td>3.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 4.5</td>
+                  <td>Mac OS 8-9</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.1</td>
+                  <td>Mac OS 7.6-9</td>
+                  <td>1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.2</td>
+                  <td>Mac OS 8-X</td>
+                  <td>1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>NetFront 3.1</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>NetFront 3.4</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Dillo 0.8</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Links</td>
+                  <td>Text only</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Lynx</td>
+                  <td>Text only</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>IE Mobile</td>
+                  <td>Windows Mobile 6</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>PSP browser</td>
+                  <td>PSP</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Other browsers</td>
+                  <td>All others</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>U</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  <th>CSS grade</th>
+                </tr>
+                </tfoot>
+              </table>
             </div>
-            <!-- /.box-body-->
+            <!-- /.box-body -->
           </div>
           <!-- /.box -->
 
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-
-      <div class="row">
-        <div class="col-md-6">
-          <!-- Line chart -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
-
-              <h3 class="box-title">Line Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Data Table With Full Features</h3>
             </div>
+            <!-- /.box-header -->
             <div class="box-body">
-              <div id="line-chart" style="height: 300px;"></div>
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  <th>CSS grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 4.0
+                  </td>
+                  <td>Win 95+</td>
+                  <td> 4</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.0
+                  </td>
+                  <td>Win 95+</td>
+                  <td>5</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.5
+                  </td>
+                  <td>Win 95+</td>
+                  <td>5.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 6
+                  </td>
+                  <td>Win 98+</td>
+                  <td>6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet Explorer 7</td>
+                  <td>Win XP SP2+</td>
+                  <td>7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>AOL browser (AOL desktop)</td>
+                  <td>Win XP</td>
+                  <td>6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 1.0</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 1.5</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 2.0</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Firefox 3.0</td>
+                  <td>Win 2k+ / OSX.3+</td>
+                  <td>1.9</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Camino 1.0</td>
+                  <td>OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Camino 1.5</td>
+                  <td>OSX.3+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape 7.2</td>
+                  <td>Win 95+ / Mac OS 8.6-9.2</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape Browser 8</td>
+                  <td>Win 98SE+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Netscape Navigator 9</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.0</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.1</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.2</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.2</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.3</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.4</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.4</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.5</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.6</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>1.6</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.7</td>
+                  <td>Win 98+ / OSX.1+</td>
+                  <td>1.7</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Mozilla 1.8</td>
+                  <td>Win 98+ / OSX.1+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Seamonkey 1.1</td>
+                  <td>Win 98+ / OSX.2+</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Gecko</td>
+                  <td>Epiphany 2.20</td>
+                  <td>Gnome</td>
+                  <td>1.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 1.2</td>
+                  <td>OSX.3</td>
+                  <td>125.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 1.3</td>
+                  <td>OSX.3</td>
+                  <td>312.8</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 2.0</td>
+                  <td>OSX.4+</td>
+                  <td>419.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>Safari 3.0</td>
+                  <td>OSX.4+</td>
+                  <td>522.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>OmniWeb 5.5</td>
+                  <td>OSX.4+</td>
+                  <td>420</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>iPod Touch / iPhone</td>
+                  <td>iPod</td>
+                  <td>420.1</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Webkit</td>
+                  <td>S60</td>
+                  <td>S60</td>
+                  <td>413</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 7.0</td>
+                  <td>Win 95+ / OSX.1+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 7.5</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 8.0</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 8.5</td>
+                  <td>Win 95+ / OSX.2+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.0</td>
+                  <td>Win 95+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.2</td>
+                  <td>Win 88+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera 9.5</td>
+                  <td>Win 88+ / OSX.3+</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Opera for Wii</td>
+                  <td>Wii</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Nokia N800</td>
+                  <td>N800</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Presto</td>
+                  <td>Nintendo DS browser</td>
+                  <td>Nintendo DS</td>
+                  <td>8.5</td>
+                  <td>C/A<sup>1</sup></td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.1</td>
+                  <td>KDE 3.1</td>
+                  <td>3.1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.3</td>
+                  <td>KDE 3.3</td>
+                  <td>3.3</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>KHTML</td>
+                  <td>Konqureror 3.5</td>
+                  <td>KDE 3.5</td>
+                  <td>3.5</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 4.5</td>
+                  <td>Mac OS 8-9</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.1</td>
+                  <td>Mac OS 7.6-9</td>
+                  <td>1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.2</td>
+                  <td>Mac OS 8-X</td>
+                  <td>1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>NetFront 3.1</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>NetFront 3.4</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Dillo 0.8</td>
+                  <td>Embedded devices</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Links</td>
+                  <td>Text only</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>Lynx</td>
+                  <td>Text only</td>
+                  <td>-</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>IE Mobile</td>
+                  <td>Windows Mobile 6</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Misc</td>
+                  <td>PSP browser</td>
+                  <td>PSP</td>
+                  <td>-</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Other browsers</td>
+                  <td>All others</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>U</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  <th>CSS grade</th>
+                </tr>
+                </tfoot>
+              </table>
             </div>
-            <!-- /.box-body-->
-          </div>
-          <!-- /.box -->
-
-          <!-- Area chart -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
-
-              <h3 class="box-title">Full Width Area Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div id="area-chart" style="height: 338px;" class="full-width-chart"></div>
-            </div>
-            <!-- /.box-body-->
-          </div>
-          <!-- /.box -->
-
-        </div>
-        <!-- /.col -->
-
-        <div class="col-md-6">
-          <!-- Bar chart -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
-
-              <h3 class="box-title">Bar Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div id="bar-chart" style="height: 300px;"></div>
-            </div>
-            <!-- /.box-body-->
-          </div>
-          <!-- /.box -->
-
-          <!-- Donut chart -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
-
-              <h3 class="box-title">Donut Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div id="donut-chart" style="height: 300px;"></div>
-            </div>
-            <!-- /.box-body-->
+            <!-- /.box-body -->
           </div>
           <!-- /.box -->
         </div>
@@ -640,7 +1409,6 @@
       <!-- /.row -->
     </section>
     <!-- /.content -->
-
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -851,284 +1619,30 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- FLOT CHARTS -->
-<script src="../../bower_components/Flot/jquery.flot.js"></script>
-<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-<script src="../../bower_components/Flot/jquery.flot.resize.js"></script>
-<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-<script src="../../bower_components/Flot/jquery.flot.pie.js"></script>
-<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-<script src="../../bower_components/Flot/jquery.flot.categories.js"></script>
-<!-- Page script -->
+<!-- page script -->
 <script>
   $(function () {
-    /*
-     * Flot Interactive Chart
-     * -----------------------
-     */
-    // We use an inline data source in the example, usually data would
-    // be fetched from a server
-    var data = [], totalPoints = 100
-
-    function getRandomData() {
-
-      if (data.length > 0)
-        data = data.slice(1)
-
-      // Do a random walk
-      while (data.length < totalPoints) {
-
-        var prev = data.length > 0 ? data[data.length - 1] : 50,
-            y    = prev + Math.random() * 10 - 5
-
-        if (y < 0) {
-          y = 0
-        } else if (y > 100) {
-          y = 100
-        }
-
-        data.push(y)
-      }
-
-      // Zip the generated y values with the x values
-      var res = []
-      for (var i = 0; i < data.length; ++i) {
-        res.push([i, data[i]])
-      }
-
-      return res
-    }
-
-    var interactive_plot = $.plot('#interactive', [getRandomData()], {
-      grid  : {
-        borderColor: '#f3f3f3',
-        borderWidth: 1,
-        tickColor  : '#f3f3f3'
-      },
-      series: {
-        shadowSize: 0, // Drawing is faster without shadows
-        color     : '#3c8dbc'
-      },
-      lines : {
-        fill : true, //Converts the line chart to area chart
-        color: '#3c8dbc'
-      },
-      yaxis : {
-        min : 0,
-        max : 100,
-        show: true
-      },
-      xaxis : {
-        show: true
-      }
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
     })
-
-    var updateInterval = 500 //Fetch data ever x milliseconds
-    var realtime       = 'on' //If == to on then fetch data every x seconds. else stop fetching
-    function update() {
-
-      interactive_plot.setData([getRandomData()])
-
-      // Since the axes don't change, we don't need to call plot.setupGrid()
-      interactive_plot.draw()
-      if (realtime === 'on')
-        setTimeout(update, updateInterval)
-    }
-
-    //INITIALIZE REALTIME DATA FETCHING
-    if (realtime === 'on') {
-      update()
-    }
-    //REALTIME TOGGLE
-    $('#realtime .btn').click(function () {
-      if ($(this).data('toggle') === 'on') {
-        realtime = 'on'
-      }
-      else {
-        realtime = 'off'
-      }
-      update()
-    })
-    /*
-     * END INTERACTIVE CHART
-     */
-
-    /*
-     * LINE CHART
-     * ----------
-     */
-    //LINE randomly generated data
-
-    var sin = [], cos = []
-    for (var i = 0; i < 14; i += 0.5) {
-      sin.push([i, Math.sin(i)])
-      cos.push([i, Math.cos(i)])
-    }
-    var line_data1 = {
-      data : sin,
-      color: '#3c8dbc'
-    }
-    var line_data2 = {
-      data : cos,
-      color: '#00c0ef'
-    }
-    $.plot('#line-chart', [line_data1, line_data2], {
-      grid  : {
-        hoverable  : true,
-        borderColor: '#f3f3f3',
-        borderWidth: 1,
-        tickColor  : '#f3f3f3'
-      },
-      series: {
-        shadowSize: 0,
-        lines     : {
-          show: true
-        },
-        points    : {
-          show: true
-        }
-      },
-      lines : {
-        fill : false,
-        color: ['#3c8dbc', '#f56954']
-      },
-      yaxis : {
-        show: true
-      },
-      xaxis : {
-        show: true
-      }
-    })
-    //Initialize tooltip on hover
-    $('<div class="tooltip-inner" id="line-chart-tooltip"></div>').css({
-      position: 'absolute',
-      display : 'none',
-      opacity : 0.8
-    }).appendTo('body')
-    $('#line-chart').bind('plothover', function (event, pos, item) {
-
-      if (item) {
-        var x = item.datapoint[0].toFixed(2),
-            y = item.datapoint[1].toFixed(2)
-
-        $('#line-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
-          .css({ top: item.pageY + 5, left: item.pageX + 5 })
-          .fadeIn(200)
-      } else {
-        $('#line-chart-tooltip').hide()
-      }
-
-    })
-    /* END LINE CHART */
-
-    /*
-     * FULL WIDTH STATIC AREA CHART
-     * -----------------
-     */
-    var areaData = [[2, 88.0], [3, 93.3], [4, 102.0], [5, 108.5], [6, 115.7], [7, 115.6],
-      [8, 124.6], [9, 130.3], [10, 134.3], [11, 141.4], [12, 146.5], [13, 151.7], [14, 159.9],
-      [15, 165.4], [16, 167.8], [17, 168.7], [18, 169.5], [19, 168.0]]
-    $.plot('#area-chart', [areaData], {
-      grid  : {
-        borderWidth: 0
-      },
-      series: {
-        shadowSize: 0, // Drawing is faster without shadows
-        color     : '#00c0ef'
-      },
-      lines : {
-        fill: true //Converts the line chart to area chart
-      },
-      yaxis : {
-        show: false
-      },
-      xaxis : {
-        show: false
-      }
-    })
-
-    /* END AREA CHART */
-
-    /*
-     * BAR CHART
-     * ---------
-     */
-
-    var bar_data = {
-      data : [['January', 10], ['February', 8], ['March', 4], ['April', 13], ['May', 17], ['June', 9]],
-      color: '#3c8dbc'
-    }
-    $.plot('#bar-chart', [bar_data], {
-      grid  : {
-        borderWidth: 1,
-        borderColor: '#f3f3f3',
-        tickColor  : '#f3f3f3'
-      },
-      series: {
-        bars: {
-          show    : true,
-          barWidth: 0.5,
-          align   : 'center'
-        }
-      },
-      xaxis : {
-        mode      : 'categories',
-        tickLength: 0
-      }
-    })
-    /* END BAR CHART */
-
-    /*
-     * DONUT CHART
-     * -----------
-     */
-
-    var donutData = [
-      { label: 'Series2', data: 30, color: '#3c8dbc' },
-      { label: 'Series3', data: 20, color: '#0073b7' },
-      { label: 'Series4', data: 50, color: '#00c0ef' }
-    ]
-    $.plot('#donut-chart', donutData, {
-      series: {
-        pie: {
-          show       : true,
-          radius     : 1,
-          innerRadius: 0.5,
-          label      : {
-            show     : true,
-            radius   : 2 / 3,
-            formatter: labelFormatter,
-            threshold: 0.1
-          }
-
-        }
-      },
-      legend: {
-        show: false
-      }
-    })
-    /*
-     * END DONUT CHART
-     */
-
   })
-
-  /*
-   * Custom Label formatter
-   * ----------------------
-   */
-  function labelFormatter(label, series) {
-    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
-      + label
-      + '<br>'
-      + Math.round(series.percent) + '%</div>'
-  }
 </script>
 </body>
 </html>

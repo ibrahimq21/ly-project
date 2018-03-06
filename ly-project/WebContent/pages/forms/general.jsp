@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | 404 Page not found</title>
+  <title>AdminLTE 2 | General Form Elements</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -157,6 +157,7 @@
                       <i class="fa fa-users text-red"></i> 5 new members joined
                     </a>
                   </li>
+
                   <li>
                     <a href="#">
                       <i class="fa fa-shopping-cart text-green"></i> 25 sales made
@@ -348,6 +349,7 @@
             <li><a href="../layout/top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="../layout/boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="../layout/fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -371,7 +373,6 @@
             <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -391,7 +392,7 @@
             <li><a href="../UI/modals.jsp"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -399,9 +400,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../forms/general.jsp"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="../forms/advanced.jsp"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="../forms/editors.jsp"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li class="active"><a href="general.jsp"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="advanced.jsp"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="editors.jsp"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -435,7 +436,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -443,15 +444,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -502,43 +503,402 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        404 Error Page
+        General Form Elements
+        <small>Preview</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
+        <li><a href="#">Forms</a></li>
+        <li class="active">General Elements</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Quick Example</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile">
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Check me out
+                  </label>
+                </div>
+              </div>
+              <!-- /.box-body -->
 
-          <p>
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.jsp">return to dashboard</a> or try using the search form.
-          </p>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
 
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
+          <!-- Form Element sizes -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Different Height</h3>
+            </div>
+            <div class="box-body">
+              <input class="form-control input-lg" type="text" placeholder=".input-lg">
+              <br>
+              <input class="form-control" type="text" placeholder="Default input">
+              <br>
+              <input class="form-control input-sm" type="text" placeholder=".input-sm">
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
 
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
-                </button>
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">Different Width</h3>
+            </div>
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder=".col-xs-3">
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control" placeholder=".col-xs-4">
+                </div>
+                <div class="col-xs-5">
+                  <input type="text" class="form-control" placeholder=".col-xs-5">
+                </div>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- Input addon -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Input Addon</h3>
+            </div>
+            <div class="box-body">
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <br>
+
+              <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+              </div>
+              <br>
+
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+              </div>
+
+              <h4>With icons</h4>
+
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <br>
+
+              <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+              </div>
+              <br>
+
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-ambulance"></i></span>
+              </div>
+
+              <h4>With checkbox and radio inputs</h4>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox">
+                        </span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                  <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="radio">
+                        </span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+              </div>
+              <!-- /.row -->
+
+              <h4>With buttons</h4>
+
+              <p class="margin">Large: <code>.input-group.input-group-lg</code></p>
+
+              <div class="input-group input-group-lg">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Action
+                    <span class="fa fa-caret-down"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <input type="text" class="form-control">
+              </div>
+              <!-- /input-group -->
+              <p class="margin">Normal</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-danger">Action</button>
+                </div>
+                <!-- /btn-group -->
+                <input type="text" class="form-control">
+              </div>
+              <!-- /input-group -->
+              <p class="margin">Small <code>.input-group.input-group-sm</code></p>
+
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-info btn-flat">Go!</button>
+                    </span>
+              </div>
+              <!-- /input-group -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
         </div>
-        <!-- /.error-content -->
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+          <!-- Horizontal Form -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Horizontal Form</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-info pull-right">Sign in</button>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+          </div>
+          <!-- /.box -->
+          <!-- general form elements disabled -->
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">General Elements</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>Text</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label>Text Disabled</label>
+                  <input type="text" class="form-control" placeholder="Enter ..." disabled>
+                </div>
+
+                <!-- textarea -->
+                <div class="form-group">
+                  <label>Textarea</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Textarea Disabled</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+                </div>
+
+                <!-- input states -->
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Help block with success</span>
+                </div>
+                <div class="form-group has-warning">
+                  <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Input with
+                    warning</label>
+                  <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+                  <span class="help-block">Help block with warning</span>
+                </div>
+                <div class="form-group has-error">
+                  <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Input with
+                    error</label>
+                  <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                  <span class="help-block">Help block with error</span>
+                </div>
+
+                <!-- checkbox -->
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      Checkbox 1
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      Checkbox 2
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" disabled>
+                      Checkbox disabled
+                    </label>
+                  </div>
+                </div>
+
+                <!-- radio -->
+                <div class="form-group">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Option two can be something else and selecting it will deselect option one
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                      Option three is disabled
+                    </label>
+                  </div>
+                </div>
+
+                <!-- select -->
+                <div class="form-group">
+                  <label>Select</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Select Disabled</label>
+                  <select class="form-control" disabled>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+
+                <!-- Select multiple-->
+                <div class="form-group">
+                  <label>Select Multiple</label>
+                  <select multiple class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Select Multiple Disabled</label>
+                  <select multiple class="form-control" disabled>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+
+              </form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!--/.col (right) -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>

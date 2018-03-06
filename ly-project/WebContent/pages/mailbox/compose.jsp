@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | 404 Page not found</title>
+  <title>AdminLTE 2 | Compose Message</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -19,6 +19,10 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,54 +81,6 @@
                     </a>
                   </li>
                   <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
                 </ul>
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
@@ -144,27 +100,6 @@
                   <li>
                     <a href="#">
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
                     </a>
                   </li>
                 </ul>
@@ -192,48 +127,6 @@
                       <div class="progress xs">
                         <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small class="pull-right">40%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small class="pull-right">60%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small class="pull-right">80%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
                     </a>
@@ -348,6 +241,7 @@
             <li><a href="../layout/top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="../layout/boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="../layout/fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -371,7 +265,6 @@
             <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -425,17 +318,26 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="../mailbox/mailbox.jsp">
+        <li class="treeview active">
+          <a href="mailbox.jsp">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="mailbox.jsp">Inbox
+                <span class="pull-right-container">
+                  <span class="label label-primary pull-right">13</span>
+                </span>
+              </a>
+            </li>
+            <li class="active"><a href="compose.jsp">Compose</a></li>
+            <li><a href="read-mail.jsp">Read</a></li>
+          </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -443,15 +345,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -502,43 +404,129 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        404 Error Page
+        Mailbox
+        <small>13 new messages</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
+        <li class="active">Mailbox</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="mailbox.jsp" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">Folders</h3>
 
-          <p>
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.jsp">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
+              <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <div class="box-body no-padding">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="mailbox.jsp"><i class="fa fa-inbox"></i> Inbox
+                  <span class="label label-primary pull-right">12</span></a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
+                <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+                <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
+                </li>
+                <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+              </ul>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">Labels</h3>
+
+              <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
+              </ul>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
-        <!-- /.error-content -->
+        <!-- /.col -->
+        <div class="col-md-9">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Compose New Message</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="form-group">
+                <input class="form-control" placeholder="To:">
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Subject:">
+              </div>
+              <div class="form-group">
+                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                      <h1><u>Heading Of Message</u></h1>
+                      <h4>Subheading</h4>
+                      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
+                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
+                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which toil and pain can procure him some great
+                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+                        except to obtain some advantage from it? But who has any right to find fault with a man who
+                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
+                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee</p>
+                      <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                        <li>List item four</li>
+                      </ul>
+                      <p>Thank you,</p>
+                      <p>John Doe</p>
+                    </textarea>
+              </div>
+              <div class="form-group">
+                <div class="btn btn-default btn-file">
+                  <i class="fa fa-paperclip"></i> Attachment
+                  <input type="file" name="attachment">
+                </div>
+                <p class="help-block">Max. 32MB</p>
+              </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+              <div class="pull-right">
+                <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+              </div>
+              <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>
@@ -751,11 +739,24 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- iCheck -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Page Script -->
+<script>
+  $(function () {
+    //Add text editor
+    $("#compose-textarea").wysihtml5();
+  });
+</script>
 </body>
 </html>

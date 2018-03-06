@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | 404 Page not found</title>
+  <title>AdminLTE 2 | Simple Tables</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -189,7 +189,7 @@
                         Design some buttons
                         <small class="pull-right">20%</small>
                       </h3>
-                      <div class="progress xs">
+                      <div class="progress progress-xs">
                         <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
                         </div>
@@ -203,7 +203,7 @@
                         Create a nice theme
                         <small class="pull-right">40%</small>
                       </h3>
-                      <div class="progress xs">
+                      <div class="progress progress-xs">
                         <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">40% Complete</span>
                         </div>
@@ -217,7 +217,7 @@
                         Some task I need to do
                         <small class="pull-right">60%</small>
                       </h3>
-                      <div class="progress xs">
+                      <div class="progress progress-xs">
                         <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">60% Complete</span>
                         </div>
@@ -231,7 +231,7 @@
                         Make beautiful transitions
                         <small class="pull-right">80%</small>
                       </h3>
-                      <div class="progress xs">
+                      <div class="progress progress-xs">
                         <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">80% Complete</span>
                         </div>
@@ -348,6 +348,7 @@
             <li><a href="../layout/top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="../layout/boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="../layout/fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -371,7 +372,6 @@
             <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -404,7 +404,7 @@
             <li><a href="../forms/editors.jsp"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
@@ -412,8 +412,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../tables/simple.jsp"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.jsp"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li class="active"><a href="simple.jsp"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="data.jsp"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -435,7 +435,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -443,15 +443,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -502,43 +502,341 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        404 Error Page
+        Simple Tables
+        <small>preview of simple tables</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
+        <li><a href="#">Tables</a></li>
+        <li class="active">Simple</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bordered Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Task</th>
+                  <th>Progress</th>
+                  <th style="width: 40px">Label</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Update software</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Clean database</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cron job running</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-light-blue">30%</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Fix and squish bugs</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-green">90%</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Condensed Full Width Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-condensed">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Task</th>
+                  <th>Progress</th>
+                  <th style="width: 40px">Label</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Update software</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Clean database</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cron job running</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-light-blue">30%</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Fix and squish bugs</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-green">90%</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-6">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Simple Full Width Table</h3>
 
-          <p>
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.jsp">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
-                </button>
+              <div class="box-tools">
+                <ul class="pagination pagination-sm no-margin pull-right">
+                  <li><a href="#">&laquo;</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Task</th>
+                  <th>Progress</th>
+                  <th style="width: 40px">Label</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Update software</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Clean database</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cron job running</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-light-blue">30%</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Fix and squish bugs</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-green">90%</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Striped Full Width Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-striped">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Task</th>
+                  <th>Progress</th>
+                  <th style="width: 40px">Label</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Update software</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Clean database</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cron job running</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-light-blue">30%</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Fix and squish bugs</td>
+                  <td>
+                    <div class="progress progress-xs progress-striped active">
+                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-green">90%</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
-        <!-- /.error-content -->
+        <!-- /.col -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Responsive Hover Table</h3>
+
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <th>ID</th>
+                  <th>User</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Reason</th>
+                </tr>
+                <tr>
+                  <td>183</td>
+                  <td>John Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-success">Approved</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>219</td>
+                  <td>Alexander Pierce</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-warning">Pending</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>657</td>
+                  <td>Bob Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-primary">Approved</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>175</td>
+                  <td>Mike Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-danger">Denied</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
     </section>
     <!-- /.content -->
   </div>
@@ -751,6 +1049,8 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->

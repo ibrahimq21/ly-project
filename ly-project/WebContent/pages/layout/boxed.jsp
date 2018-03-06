@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | 404 Page not found</title>
+  <title>AdminLTE 2 | Boxed Layout</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,7 +30,9 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
+<body class="hold-transition skin-blue layout-boxed sidebar-mini">
+<!-- Site wrapper -->
 <div class="wrapper">
 
   <header class="main-header">
@@ -46,9 +48,6 @@
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </a>
 
       <div class="navbar-custom-menu">
@@ -77,54 +76,6 @@
                     </a>
                   </li>
                   <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
                 </ul>
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
@@ -144,27 +95,6 @@
                   <li>
                     <a href="#">
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
                     </a>
                   </li>
                 </ul>
@@ -192,48 +122,6 @@
                       <div class="progress xs">
                         <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small class="pull-right">40%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small class="pull-right">60%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small class="pull-right">80%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
                     </a>
@@ -275,7 +163,6 @@
                     <a href="#">Friends</a>
                   </div>
                 </div>
-                <!-- /.row -->
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -296,7 +183,10 @@
       </div>
     </nav>
   </header>
-  <!-- Left side column. contains the logo and sidebar -->
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -336,7 +226,7 @@
             <li><a href="../../index2.jsp"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Layout Options</span>
@@ -345,9 +235,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="../layout/fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li class="active"><a href="boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -371,7 +262,6 @@
             <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -435,7 +325,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -443,15 +333,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -497,52 +387,58 @@
     <!-- /.sidebar -->
   </aside>
 
+  <!-- =============================================== -->
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        404 Error Page
+        Boxed Layout
+        <small>Blank example to the boxed layout</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
+        <li><a href="#">Layout</a></li>
+        <li class="active">Boxed</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
+      <div class="callout callout-info">
+        <h4>Tip!</h4>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
-
-          <p>
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.jsp">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </div>
-            </div>
-            <!-- /.input-group -->
-          </form>
-        </div>
-        <!-- /.error-content -->
+        <p>Add the layout-boxed class to the body tag to get this layout. The boxed layout is helpful when working on
+          large screens because it prevents the site from stretching very wide.</p>
       </div>
-      <!-- /.error-page -->
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Title</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <div class="box-body">
+          Start creating your amazing application!
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Footer
+        </div>
+        <!-- /.box-footer-->
+      </div>
+      <!-- /.box -->
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
@@ -751,6 +647,8 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | 404 Page not found</title>
+  <title>AdminLTE 2 | Morris.js Charts</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Morris charts -->
+  <link rel="stylesheet" href="../../bower_components/morris.js/morris.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -348,6 +350,7 @@
             <li><a href="../layout/top-nav.jsp"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="../layout/boxed.jsp"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="../layout/fixed.jsp"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -358,7 +361,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
             <span>Charts</span>
@@ -367,11 +370,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.jsp"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="../charts/morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="../charts/flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="../charts/inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-            <li><a href="../layout/collapsed-sidebar.jsp"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="chartjs.jsp"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li class="active"><a href="morris.jsp"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="flot.jsp"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="inline.jsp"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -435,7 +437,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -443,15 +445,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="../examples/invoice.jsp"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.jsp"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.jsp"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.jsp"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.jsp"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.jsp"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.jsp"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.jsp"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.jsp"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -502,43 +504,106 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        404 Error Page
+        Morris Charts
+        <small>Preview sample</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
+        <li><a href="#">Charts</a></li>
+        <li class="active">Morris</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
+      <div class="callout callout-warning">
+        <h4>Warning!</h4>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+        <p><b>Morris.js</b> charts are no longer maintained by its author. We would recommend using any of the other
+          charts that come with the template.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- AREA CHART -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Area Chart</h3>
 
-          <p>
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.jsp">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="revenue-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- DONUT CHART -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">Donut Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="sales-chart" style="height: 300px; position: relative;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
         </div>
-        <!-- /.error-content -->
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Line Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- BAR CHART -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bar Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="bar-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (RIGHT) -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
+
     </section>
     <!-- /.content -->
   </div>
@@ -751,11 +816,98 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<script src="../../bower_components/raphael/raphael.min.js"></script>
+<script src="../../bower_components/morris.js/morris.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    "use strict";
+
+    // AREA CHART
+    var area = new Morris.Area({
+      element: 'revenue-chart',
+      resize: true,
+      data: [
+        {y: '2011 Q1', item1: 2666, item2: 2666},
+        {y: '2011 Q2', item1: 2778, item2: 2294},
+        {y: '2011 Q3', item1: 4912, item2: 1969},
+        {y: '2011 Q4', item1: 3767, item2: 3597},
+        {y: '2012 Q1', item1: 6810, item2: 1914},
+        {y: '2012 Q2', item1: 5670, item2: 4293},
+        {y: '2012 Q3', item1: 4820, item2: 3795},
+        {y: '2012 Q4', item1: 15073, item2: 5967},
+        {y: '2013 Q1', item1: 10687, item2: 4460},
+        {y: '2013 Q2', item1: 8432, item2: 5713}
+      ],
+      xkey: 'y',
+      ykeys: ['item1', 'item2'],
+      labels: ['Item 1', 'Item 2'],
+      lineColors: ['#a0d0e0', '#3c8dbc'],
+      hideHover: 'auto'
+    });
+
+    // LINE CHART
+    var line = new Morris.Line({
+      element: 'line-chart',
+      resize: true,
+      data: [
+        {y: '2011 Q1', item1: 2666},
+        {y: '2011 Q2', item1: 2778},
+        {y: '2011 Q3', item1: 4912},
+        {y: '2011 Q4', item1: 3767},
+        {y: '2012 Q1', item1: 6810},
+        {y: '2012 Q2', item1: 5670},
+        {y: '2012 Q3', item1: 4820},
+        {y: '2012 Q4', item1: 15073},
+        {y: '2013 Q1', item1: 10687},
+        {y: '2013 Q2', item1: 8432}
+      ],
+      xkey: 'y',
+      ykeys: ['item1'],
+      labels: ['Item 1'],
+      lineColors: ['#3c8dbc'],
+      hideHover: 'auto'
+    });
+
+    //DONUT CHART
+    var donut = new Morris.Donut({
+      element: 'sales-chart',
+      resize: true,
+      colors: ["#3c8dbc", "#f56954", "#00a65a"],
+      data: [
+        {label: "Download Sales", value: 12},
+        {label: "In-Store Sales", value: 30},
+        {label: "Mail-Order Sales", value: 20}
+      ],
+      hideHover: 'auto'
+    });
+    //BAR CHART
+    var bar = new Morris.Bar({
+      element: 'bar-chart',
+      resize: true,
+      data: [
+        {y: '2006', a: 100, b: 90},
+        {y: '2007', a: 75, b: 65},
+        {y: '2008', a: 50, b: 40},
+        {y: '2009', a: 75, b: 65},
+        {y: '2010', a: 50, b: 40},
+        {y: '2011', a: 75, b: 65},
+        {y: '2012', a: 100, b: 90}
+      ],
+      barColors: ['#00a65a', '#f56954'],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['CPU', 'DISK'],
+      hideHover: 'auto'
+    });
+  });
+</script>
 </body>
 </html>

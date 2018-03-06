@@ -331,7 +331,7 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li class="active"><a href="index.html"><i
+							<li class="active"><a href="index.jsp"><i
 									class="fa fa-circle-o"></i> Dashboard v1</a></li>
 							<li><a href="index2.jsp"><i class="fa fa-circle-o"></i>
 									Dashboard v2</a></li>
@@ -342,16 +342,16 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/layout/top-nav.html"><i
+							<li><a href="pages/layout/top-nav.jsp"><i
 									class="fa fa-circle-o"></i> Top Navigation</a></li>
-							<li><a href="pages/layout/boxed.html"><i
+							<li><a href="pages/layout/boxed.jsp"><i
 									class="fa fa-circle-o"></i> Boxed</a></li>
-							<li><a href="pages/layout/fixed.html"><i
+							<li><a href="pages/layout/fixed.jsp"><i
 									class="fa fa-circle-o"></i> Fixed</a></li>
-							<li><a href="pages/layout/collapsed-sidebar.html"><i
+							<li><a href="pages/layout/collapsed-sidebar.jsp"><i
 									class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
 						</ul></li>
-					<li><a href="pages/widgets.html"> <i class="fa fa-th"></i>
+					<li><a href="pages/widgets.jsp"> <i class="fa fa-th"></i>
 							<span>Widgets</span> <span class="pull-right-container"> <small
 								class="label pull-right bg-green">new</small>
 						</span>
@@ -363,13 +363,13 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/charts/chartjs.html"><i
+							<li><a href="pages/charts/chartjs.jsp"><i
 									class="fa fa-circle-o"></i> ChartJS</a></li>
-							<li><a href="pages/charts/morris.html"><i
+							<li><a href="pages/charts/morris.jsp"><i
 									class="fa fa-circle-o"></i> Morris</a></li>
-							<li><a href="pages/charts/flot.html"><i
+							<li><a href="pages/charts/flot.jsp"><i
 									class="fa fa-circle-o"></i> Flot</a></li>
-							<li><a href="pages/charts/inline.html"><i
+							<li><a href="pages/charts/inline.jsp"><i
 									class="fa fa-circle-o"></i> Inline charts</a></li>
 						</ul></li>
 					<li class="treeview"><a href="#"> <i class="fa fa-laptop"></i>
@@ -378,17 +378,17 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/UI/general.html"><i
+							<li><a href="pages/UI/general.jsp"><i
 									class="fa fa-circle-o"></i> General</a></li>
-							<li><a href="pages/UI/icons.html"><i
+							<li><a href="pages/UI/icons.jsp"><i
 									class="fa fa-circle-o"></i> Icons</a></li>
-							<li><a href="pages/UI/buttons.html"><i
+							<li><a href="pages/UI/buttons.jsp"><i
 									class="fa fa-circle-o"></i> Buttons</a></li>
-							<li><a href="pages/UI/sliders.html"><i
+							<li><a href="pages/UI/sliders.jsp"><i
 									class="fa fa-circle-o"></i> Sliders</a></li>
-							<li><a href="pages/UI/timeline.html"><i
+							<li><a href="pages/UI/timeline.jsp"><i
 									class="fa fa-circle-o"></i> Timeline</a></li>
-							<li><a href="pages/UI/modals.html"><i
+							<li><a href="pages/UI/modals.jsp"><i
 									class="fa fa-circle-o"></i> Modals</a></li>
 						</ul></li>
 					<li class="treeview"><a href="#"> <i class="fa fa-edit"></i>
@@ -397,11 +397,11 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/forms/general.html"><i
+							<li><a href="pages/forms/general.jsp"><i
 									class="fa fa-circle-o"></i> General Elements</a></li>
-							<li><a href="pages/forms/advanced.html"><i
+							<li><a href="pages/forms/advanced.jsp"><i
 									class="fa fa-circle-o"></i> Advanced Elements</a></li>
-							<li><a href="pages/forms/editors.html"><i
+							<li><a href="pages/forms/editors.jsp"><i
 									class="fa fa-circle-o"></i> Editors</a></li>
 						</ul></li>
 					<li class="treeview"><a href="#"> <i class="fa fa-table"></i>
@@ -410,19 +410,19 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/tables/simple.html"><i
+							<li><a href="pages/tables/simple.jsp"><i
 									class="fa fa-circle-o"></i> Simple tables</a></li>
-							<li><a href="pages/tables/data.html"><i
+							<li><a href="pages/tables/data.jsp"><i
 									class="fa fa-circle-o"></i> Data tables</a></li>
 						</ul></li>
-					<li><a href="pages/calendar.html"> <i
+					<li><a href="pages/calendar.jsp"> <i
 							class="fa fa-calendar"></i> <span>Calendar</span> <span
 							class="pull-right-container"> <small
 								class="label pull-right bg-red">3</small> <small
 								class="label pull-right bg-blue">17</small>
 						</span>
 					</a></li>
-					<li><a href="pages/mailbox/mailbox.html"> <i
+					<li><a href="pages/mailbox/mailbox.jsp"> <i
 							class="fa fa-envelope"></i> <span>Mailbox</span> <span
 							class="pull-right-container"> <small
 								class="label pull-right bg-yellow">12</small> <small
@@ -436,23 +436,23 @@
 						</span>
 					</a>
 						<ul class="treeview-menu">
-							<li><a href="pages/examples/invoice.html"><i
+							<li><a href="pages/examples/invoice.jsp"><i
 									class="fa fa-circle-o"></i> Invoice</a></li>
-							<li><a href="pages/examples/profile.html"><i
+							<li><a href="pages/examples/profile.jsp"><i
 									class="fa fa-circle-o"></i> Profile</a></li>
-							<li><a href="pages/examples/login.html"><i
+							<li><a href="pages/examples/login.jsp"><i
 									class="fa fa-circle-o"></i> Login</a></li>
-							<li><a href="pages/examples/register.html"><i
+							<li><a href="pages/examples/register.jsp"><i
 									class="fa fa-circle-o"></i> Register</a></li>
-							<li><a href="pages/examples/lockscreen.html"><i
+							<li><a href="pages/examples/lockscreen.jsp"><i
 									class="fa fa-circle-o"></i> Lockscreen</a></li>
-							<li><a href="pages/examples/404.html"><i
+							<li><a href="pages/examples/404.jsp"><i
 									class="fa fa-circle-o"></i> 404 Error</a></li>
-							<li><a href="pages/examples/500.html"><i
+							<li><a href="pages/examples/500.jsp"><i
 									class="fa fa-circle-o"></i> 500 Error</a></li>
-							<li><a href="pages/examples/blank.html"><i
+							<li><a href="pages/examples/blank.jsp"><i
 									class="fa fa-circle-o"></i> Blank Page</a></li>
-							<li><a href="pages/examples/pace.html"><i
+							<li><a href="pages/examples/pace.jsp"><i
 									class="fa fa-circle-o"></i> Pace Page</a></li>
 						</ul></li>
 					<li class="treeview"><a href="#"> <i class="fa fa-share"></i>
